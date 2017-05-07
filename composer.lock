@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "content-hash": "61f2919aeb088c3f89be41ab150eb175",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -911,6 +911,56 @@
             "time": "2017-03-19T21:40:44+00:00"
         },
         {
+            "name": "pubnub/pubnub",
+            "version": "4.0.0-beta.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pubnub/php.git",
+                "reference": "1eea71a5f1f702a953ccab881b6e17bbd6baab20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pubnub/php/zipball/1eea71a5f1f702a953ccab881b6e17bbd6baab20",
+                "reference": "1eea71a5f1f702a953ccab881b6e17bbd6baab20",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.0",
+                "php": ">=5.6.0",
+                "rmccue/requests": ">=1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PubNub\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PubNub",
+                    "email": "support@pubnub.com"
+                }
+            ],
+            "description": "The Only Global Network For Real-Time Data -- PubNub!",
+            "homepage": "http://www.pubnub.com/",
+            "keywords": [
+                "ajax",
+                "api",
+                "push",
+                "real time",
+                "real-time",
+                "realtime"
+            ],
+            "time": "2017-04-21T11:12:44+00:00"
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.6.1",
             "source": {
@@ -991,6 +1041,55 @@
                 "uuid"
             ],
             "time": "2017-03-26T20:37:53+00:00"
+        },
+        {
+            "name": "rmccue/requests",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmccue/Requests.git",
+                "reference": "87932f52ffad70504d93f04f15690cf16a089546"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmccue/Requests/zipball/87932f52ffad70504d93f04f15690cf16a089546",
+                "reference": "87932f52ffad70504d93f04f15690cf16a089546",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "requests/test-server": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Requests": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan McCue",
+                    "homepage": "http://ryanmccue.info"
+                }
+            ],
+            "description": "A HTTP library written in PHP, for human beings.",
+            "homepage": "http://github.com/rmccue/Requests",
+            "keywords": [
+                "curl",
+                "fsockopen",
+                "http",
+                "idna",
+                "ipv6",
+                "iri",
+                "sockets"
+            ],
+            "time": "2016-10-13T00:11:37+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1825,6 +1924,57 @@
                 "dump"
             ],
             "time": "2017-01-24T13:02:38+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "4.0.0-alpha.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "65ffb1c3b6e94440812a2e228cb8e8be512652ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/65ffb1c3b6e94440812a2e228cb8e8be512652ec",
+                "reference": "65ffb1c3b6e94440812a2e228cb8e8be512652ec",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "time": "2017-01-06T16:41:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3461,7 +3611,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pubnub/pubnub": 10,
+        "twbs/bootstrap": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -30,3 +30,11 @@ Route::match(array('GET', 'POST'), 'userlogin.php', function(Request $request)
 Route::get('/users', function () {
     return view('users');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
