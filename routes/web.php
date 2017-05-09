@@ -38,3 +38,5 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@test');
+
+Route::get('/admin', 'HomeController@admin');

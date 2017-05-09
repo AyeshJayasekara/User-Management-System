@@ -45,4 +45,17 @@ class HomeController extends Controller
             ]
             );
     }
+
+    public function admin()
+    {
+        if(Auth::user()->email == 'asd@asd.com'){
+            $results = DB::select('select * from allusers');
+            return view('admin',['results' => $results]);
+        }
+        else
+            return view('errors.admin');
+
+    }
 }
+
+

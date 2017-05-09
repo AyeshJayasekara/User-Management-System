@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/app.js"></script>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
         <!-- Styles -->
         <style>
             html, body {
