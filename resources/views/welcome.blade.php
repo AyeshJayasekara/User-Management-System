@@ -151,10 +151,9 @@
 
                 <div class="links">
                     <a href="register">Register</button> </a>
-                    <a href="https://laracasts.com">Contact Us</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Bug Tracker</a>
-                    <a href="users">Users</a>
+                    <a href="">Contact Us</a>
+                    <a href="">News</a>
+                    <a href="">Bug Tracker</a>
                 </div>
             </div>
         </div>
