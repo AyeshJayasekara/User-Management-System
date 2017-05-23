@@ -49,7 +49,7 @@
                         <h2>Curtain <span class="label label-danger">CLOSED</span></h2>
                         <h2>DOOR <span class="label label-info">UNLOKED</span></h2>
 
-                        <h2>Temperature <span class="label label-warning">22</span></h2>
+                        <h2>Temperature <span class="label label-warning"><?php echo $t?></span></h2>
 
 
 

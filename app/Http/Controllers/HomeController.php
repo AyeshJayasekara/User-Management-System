@@ -41,7 +41,8 @@ class HomeController extends Controller
             ['l1'=>$results[0]->light1,
                 'l2'=>$results[0]->light2,
                 'l3'=>$results[0]->light3,
-                'l4'=>$results[0]->light4
+                'l4'=>$results[0]->light4,
+                't'=>$results[0]->temp
             ]
             );
     }
